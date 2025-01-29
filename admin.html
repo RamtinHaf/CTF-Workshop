@@ -23,7 +23,7 @@
         function resetScoreboard() {
             const password = prompt('Enter the password (hint: whooopsi):');
 
-            if (password === WSPASS_kcl) {
+            if (password === "WSPASS_kcl") {
                 fetch('https://glacial-harbor-65877-1c37b55d63e9.herokuapp.com/reset', {
                         method: 'POST',
                         headers: {
