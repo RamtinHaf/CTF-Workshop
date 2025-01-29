@@ -25,7 +25,7 @@
             const password = prompt('Enter the password (hint: whooopsi):');
 
             if (password === PASSWORD) {
-                fetch('https://ctf-backend-2-0c7b13db4f56.herokuapp.com/reset', {
+                fetch('https://glacial-harbor-65877-1c37b55d63e9.herokuapp.com/reset', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -55,7 +55,7 @@
 
         // Function to update the scoreboard by fetching scores from the backend
         function updateAllUsersScoreboard() {
-            fetch('https://ctf-backend-2-0c7b13db4f56.herokuapp.com/scores', {
+            fetch('https://glacial-harbor-65877-1c37b55d63e9.herokuapp.com/scores', {
                     headers: {
                         'Content-Type': 'application/json'
                             // If your server requires authentication, add your auth headers here
