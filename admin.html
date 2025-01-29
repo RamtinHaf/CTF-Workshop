@@ -19,12 +19,13 @@
     </div>
 
     <script>
+        import { PASSWORD } from './config.js';
         // Function to reset the scoreboard with a password
         function resetScoreboard() {
             const password = prompt('Enter the password (hint: whooopsi):');
 
-            if (password === 'WSpass') {
-                fetch('https://dry-scrubland-90422-a1e12a27055a.herokuapp.com/reset', {
+            if (password === PASSWORD) {
+                fetch('ctf-backend-2-0c7b13db4f56.herokuapp.com/reset', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -54,7 +55,7 @@
 
         // Function to update the scoreboard by fetching scores from the backend
         function updateAllUsersScoreboard() {
-            fetch('https://dry-scrubland-90422-a1e12a27055a.herokuapp.com/scores', {
+            fetch('ctf-backend-2-0c7b13db4f56.herokuapp.com/scores', {
                     headers: {
                         'Content-Type': 'application/json'
                             // If your server requires authentication, add your auth headers here
