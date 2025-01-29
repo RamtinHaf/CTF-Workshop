@@ -18,13 +18,12 @@
         <!-- The all users scoreboard will be updated here -->
     </div>
 
-    <script type="module">
-        import { PASSWORD } from './config.js';
+    <script>
         // Function to reset the scoreboard with a password
         function resetScoreboard() {
             const password = prompt('Enter the password (hint: whooopsi):');
 
-            if (password === PASSWORD) {
+            if (password === WSPASS_kcl) {
                 fetch('https://glacial-harbor-65877-1c37b55d63e9.herokuapp.com/reset', {
                         method: 'POST',
                         headers: {
